@@ -1,0 +1,229 @@
+body {
+    margin:0;
+    background-image:url("../image/backgound.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    font-family: Arial, Helvetica, sans-serif;
+     font-size:20px;
+     
+}
+p {
+    line-height:150%;
+}
+header {
+
+background-color: white;
+min-height:70px;
+border-bottom:3px solid #9fedd7 ;
+}
+header a {
+float:left;
+color: black;
+text-decoration:none;
+font-size:26px;
+padding:20px;
+}
+header a.active {
+    background-color:#dce2d2;
+}
+
+header a:hover
+{
+background-color:#dce2d2; ;
+}
+footer{
+    min-height:70px;
+    background-color: rgb(223, 216, 206);
+    border-top:3 px solid #9fedd770;
+    width: 100%;
+}
+.container {
+    min-height:100 vh;
+    padding:5px 20% 10px 15%;
+
+}
+.header-logo{
+    float: left;
+height:60px;
+margin:5px 20px 10px 40px;
+
+}
+.centered {
+    text-align:center;
+
+}
+.footer-info {
+    margin-top:10px;
+    font-size:24px;
+    
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow:5px 3px 20px gray;   
+}
+hr{
+    border-top:3px solid gray;
+}
+img {
+    max-width:100%;
+}
+  .img-star{
+      max-height:500px;
+      border:4px solid #222222;
+      box-shadow:6px 6px 8px gray;
+  }
+  .container-foto{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap:wrap ;
+
+  }
+  .img-foto{
+      margin-top:5px;
+      max-height:130px;
+      transition:all linear 1s;
+  }
+  .img-foto:hover{
+      transform: scale(1.5);
+      transition: all linear 1.5s;
+  }
+  .row{
+    overflow:hidden;}
+      .col-1 {width: 8.33%;}    
+       .col-2 {width: 16.66%;}     
+       .col-3 {width: 25%;}     
+       .col-4 {width: 33.33%;}     
+       .col-5 {width: 41.66%;}     
+       .col-6 {width: 50%;}     
+       .col-7 {width: 58.33%;}     
+       .col-8 {width: 66.66%;}     
+       .col-9 {width: 75%;}     
+       .col-10 {width: 83.33%;}     
+       .col-11 {width: 91.66%;}     
+       .col-12 {width: 100%;}
+  [class*="col-"]{
+    float:left;
+  }
+  
+  
+  .input-box{
+      width:80%;
+      height:20px;
+  } 
+  .input-submit{
+      font-size:18px;
+      background-color:wheat;
+      padding:5px;
+      border:2px solid gray;
+  
+    }
+    .harta{
+        margin-top:30px;
+    }
+    .contat-form{
+        background-color: lightgray;
+        padding: 10px;
+    }
+    .hamburger-menu{
+        display: none;
+        float:right;
+    }
+    .container-iframe{
+        margin: auto;
+        padding: 10px;
+    }
+    .img-despre{
+        max-height: 250px;
+        border: 4px solid black;
+        box-shadow: 5px 5px 15px white;
+        margin: 15px;
+    }
+    table,th,td{
+        border: 2px solid rgba(128, 128, 128, 0.5);
+    }
+        tr{
+            background-color: white;
+        }
+        th,td{
+            width: 150px;
+        }
+        table{
+            width: 100%;
+        }
+        th,td{
+            min-width: 60px;
+        }
+        .tabel-date{
+            overflow-x:scroll ;
+        }
+        .slideshow-container{
+            height: 500px;
+            display: flex;
+            justify-content: center;
+
+        }
+        .slide{
+        display: none;
+        position: relative;
+        }
+        
+        .slide img{
+            max-width: 100%;
+            max-height: 470px;
+            border: 3px solid black;
+            box-shadow: 4px 4px 8px white;
+        }
+
+        .numar-slide{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            background-color: rgba(245, 244, 244, 0.493);
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .istoric{
+            
+            background-color: rgba(245, 244, 244, 0.493);
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+
+        } 
+    
+    @media (max-width: 770px) {
+        [class*="col-"]{
+            width: 100%;
+          }
+        .container{
+            padding:5px 5% 10px 5%;
+        }
+        .nav a{
+            display: none;
+        }
+        a.hamburger-menu{
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .nav.mobile a{
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        .slideshow-container{
+            height: 270px;
+
+        }
+        .slide img{
+            max-width: 250px;
+        }
+    }
